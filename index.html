@@ -1,25 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Akhilesh Goud</title>
-<link href="main.css" rel="stylesheet" />
-<link href="font.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Akhilesh Goud</title>
+
+    <!-- CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+    <link href="assets/css/animate.css" rel="stylesheet">
+
+    <!-- Custom styles CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+    <script src="assets/js/modernizr.custom.js"></script>
+
 </head>
 <body>
-<div class="logo"><img src="images/logo.png" width="80%"/></div>
-<div class="menu">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="edu.html">Education & Experience</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="interests.html">Interests</a></li>
-<li><a href="contact.html">Contact me</a></li>
-</ul></div>
-<div class="content">
-<h2>"There are only 10 kinds of people: one who understand computers and others who don't!"</h2>
-</div> 
-<div class="author">&copy; 2015 Akhilesh Goud</div>
+
+    <!-- Preloader -->
+
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+
+    <!-- Home start -->
+
+    <section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+        <div class="intro">
+            <div class="start">
+                <img src="assets/images/logo.png" />
+                <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "There are only 10 kinds of people: one who understand computers and others who don't!"</h3>
+            </div>
+        </div>
+
+        <a href="#about">
+            <div class="scroll-down">
+                <span>
+                    <i class="fa fa-angle-down fa-2x"></i>
+                </span>
+            </div>
+        </a>
+
+    </section>
+
+    <!-- Home end -->
+
+    <!-- Navigation start -->
+
+    <header class="header">
+
+        <nav class="navbar navbar-custom" role="navigation">
+
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">AG</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#edu">Education & Experience</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#interest">Interests</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- .container -->
+
+        </nav>
+
+    </header>
+
+    <!-- Navigation end -->
+
+    <!-- About start -->
+
+    <section id="about" class="pfblock pfblock-gray">
+        <div class="container">
+            <div class="row">
+                <div class="pfblock-header wow fadeInUp">
+                    <h2 class="pfblock-title">Computer Science Graduate student</h2>
+                    <div class="pfblock-line">
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-3">
+
+                        <div class="pfblock-subtitle">
+                            Coming from Hyderabad, India, my passion for computers has motivated me to travel to United States of America and pursue Masters in Computer Science at Arizona State University.					
+                        </div>
+                        <div class="pfblock-line"></div>
+                        <a href="assets/Resume.pdf" target="_blank" class="btn btn-primary">Download Resume</a>
+                    </div>
+
+                </div>
+            </div>
+
+            </br></br>
+
+            <div class="row">
+                <div class="pfblock-header wow fadeInUp">
+                    <h2 class="pfblock-title">I am a programming enthusiast</h2>
+                    <h3 class="pfblock-title">my active interests are in</h3>
+                </div>
+                <div class="col-sm-3">
+
+                    <div class="iconbox wow slideInLeft">
+                        <div class="iconbox-icon">
+                            <span class="icon-magic-wand"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Web Developement & Design</h3>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="iconbox wow slideInLeft">
+                        <div class="iconbox-icon">
+                            <span class="icon-puzzle"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Software & Application Development</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="iconbox wow slideInRight">
+                        <div class="iconbox-icon">
+                            <span class="icon-cloud-download"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Operating Systems & Distributed Computing</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="iconbox wow slideInRight">
+                        <div class="iconbox-icon">
+                            <span class="icon-book-open"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Software Project & Quality Management</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </section>
+
+    <!-- About end -->
+
+    <!-- Edu start -->
+
+    <section id="edu" class="pfblock pfblock-gray">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <div class="pfblock-header wow fadeInUp">
+                        <h2 class="pfblock-title">Education</h2>
+                        <div class="pfblock-line"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- .row -->
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                    <div class="pfblock-header wow fadeInUp">
+                        <div class="pfblock-subtitle">
+                            <b>Masters in Computer Science (MCS)</b></br>
+							Arizona State University, Tempe </br> Aug'14 - May'16 (expected)</br> GPA: 3.44/4.0
+					
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="pfblock-header wow fadeInUp">
+                        <div class="pfblock-subtitle">
+                            <b>Bachelor of Technology (B.Tech)</b></br>
+							Jawaharlal Nehru Technological University, Hyderabad  </br> Oct'10 - June'14</br> GPA: 3.5/4.0
+					
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- .row -->
+
+
+            <div class="row">
+                <div class="pfblock-header wow fadeInUp">
+                    <h2 class="pfblock-title">Work Experience</h2>
+                    <div class="pfblock-line"></div>
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="iconbox wow zoomIn">
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Web Developement Intern</h3>
+                            <div class="iconbox-desc">
+                                <p><a href="http://www.ruralmetro.com/" style="color: #006699" target="_blank">Rural Metro Corporation, Scottsdale</a></p>
+                                <p>May, 2015 - Present</p>
+                                <p>Redesigning Rural/Metro internet website. Working with Joomla, HTML5, CSS3, Jquery, Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="iconbox wow zoomIn">
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Graphic Designer</h3>
+                            <div class="iconbox-desc">
+                                <p><a href="https://eoss.asu.edu/student-engagement" style="color: #006699" target="_blank">Student & Cultural Engagement, ASU</a></p>
+                                <p>October, 2015 - Present</p>
+                                <p>Designing the marketing materials for various events. Working with Adobe Illustrator and Photoshop.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="iconbox wow zoomIn">
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Internship</h3>
+                            <div class="iconbox-desc">
+                                <p><a href="http://www.buddhisoftware.com/" style="color: #006699" target="_blank">Buddhi Software Technologies Pvt. Ltd., Hyderabad</a></p>
+                                <p>December, 2013 - April,2014</p>
+                                <p>Worked on a project named Meal Delivery Service Web Application using Java, J2EE.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="iconbox wow zoomIn">
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Intern</h3>
+                            <div class="iconbox-desc">
+                                <p><a href="http://www.accendotechnologies.com/" style="color: #006699" target="_blank">Accendo Technologies Pvt. Ltd., Hyderabad</a></p>
+                                <p>March, 2013 - April,2013</p>
+                                <p>Developed a portal application for the intranet communication using PHP, HTML, JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- .contaier -->
+
+    </section>
+
+    <!-- Edu end -->
+
+    <!-- Project start -->
+
+    <section id="project" class="pfblock pfblock-gray">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <div class="pfblock-header wow fadeInUp">
+                        <h2 class="pfblock-title">My works</h2>
+                        <div class="pfblock-line"></div>
+                        <div class="pfblock-subtitle">
+                            <p>I have worked on various projects in different fields of computer science but mostly concentrated on Web and Application Development.</p>
+                            <p>You can find them <a href="https://github.com/akhileshgoud?tab=repositories" style="color: blue" target="_blank">HERE!</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- .row -->
+
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/prjct1.jpg" alt="img01" />
+                            <figcaption>
+                                <h2><strong><a href="https://github.com/akhileshgoud/Travel-Package-Booking-System" style="color: #FFFF66" target="_blank">Travel Package Booking System</a></strong></h2>
+                                <p>C#, ASP.Net, SOA</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/prjct2.jpg" alt="img01" />
+                            <figcaption>
+                                <h2><strong><a href="#" style="color: #FFFF66" target="_blank">Meal Delivery Service Application</a></strong></h2>
+                                <p>Java, J2EE</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/prjct3.jpg" alt="img01" />
+                            <figcaption>
+                                <h2><strong><a href="https://github.com/akhileshgoud/Query-Request-Portal" style="color: #FFFF66" target="_blank">Query Request Portal</a></strong></h2>
+                                <p>PHP, HTML, JavaScript</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/prjct4.jpg" alt="img01" />
+                            <figcaption>
+                                <h2><strong><a href="https://github.com/akhileshgoud/Parallelized-Matrix-Multiplication" style="color: #FFFF66" target="_blank">Parallel Processing Simulation</a></strong></h2>
+                                <p>C, Shell Script, Linux</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/prjct5.jpg" alt="img01" />
+                            <figcaption>
+                                <h2><strong><a href="https://github.com/akhileshgoud/Hotel-Booking-System" style="color: #FFFF66" target="_blank">Hotel Booking System</a></strong></h2>
+                                <p>C#, ASP.Net, OOP</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/prjct6.jpg" alt="img01" />
+                            <figcaption>
+                                <h2><strong><a href="https://github.com/akhileshgoud/SSL-for-Corporate-Network" style="color: #FFFF66" target="_blank">SSL for Corporate Network</a></strong></h2>
+                                <p>Java, Oracle DB (SQL)</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- .contaier -->
+
+    </section>
+
+    <!-- Project end -->
+
+    <!-- Interest start -->
+
+    <section id="interest" class="pfblock pfblock-gray">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <div class="pfblock-header wow fadeInUp">
+                        <h2 class="pfblock-title">Graphic Design</h2>
+                        <div class="pfblock-line"></div>
+                        <div class="pfblock-subtitle">
+                            Graphic Design has always held a fascination for me. I enjoy creating mockups, design, publicity material and make things look simple yet supreme using Adobe Photoshop & Illustrator. 
+					
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- .row -->
+
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <img src="assets/images/sce1.png" alt="img01" />
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <img src="assets/images/magistech1.png" alt="img01" />
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <img src="assets/images/magistech2.png" alt="img01" />
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <img src="assets/images/sce3.png" alt="img01" />
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <img src="assets/images/qubit4.jpg" alt="img01" />
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- .contaier -->
+
+    </section>
+
+    <!-- Interest end -->
+
+    <!-- Contact start -->
+
+    <section id="contact" class="pfblock pfblock-gray">
+        <div class="container">
+            <div class="row">
+
+                    <div class="pfblock-header wow fadeInUp">
+                        <h2 class="pfblock-title">Would like to hear from you!</h2>
+                        <div class="pfblock-line"></div>
+                <div class="col-sm-6 col-sm-offset-3">
+                        <div class="pfblock-subtitle">
+                            <p>Phone: +1 (480)246-2110</p>
+                            <p>Email: akhigoud@outlook.com &nbsp&nbsp | &nbsp&nbsp aaila@asu.edu</p>
+                        </div>
+                        <div class="pfblock-line"></div>
+                        <div>
+                            <h3 class="pfblock-title">You can find me here too!</h3>
+                            </br>
+                            <a href="https://www.linkedin.com/in/akhileshgoud/en" target="_blank">
+                                <img src="assets/images/linkedIn.png" alt="LinkedIn"></a>
+                            &nbsp&nbsp&nbsp&nbsp
+                            <a href="https://github.com/akhileshgoud" target="_blank">
+                                <img src="assets/images/git.png" alt="GitHub"></a>
+                            &nbsp&nbsp&nbsp&nbsp
+                            <a href="https://www.facebook.com/akhilchester" target="_blank">
+                                <img src="assets/images/fb.png" alt="FaceBook"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- .row -->
+
+        </div>
+        <!-- .container -->
+    </section>
+
+    <!-- Contact end -->
+
+    <!-- Footer start -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <p class="copyright">
+                        © 2015 Akhilesh Goud &nbsp&nbsp | &nbsp&nbsp Theme Credits: Bootstrapzero.com
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </footer>
+
+    <!-- Footer end -->
+
+    <!-- Scroll to top -->
+
+    <div class="scroll-up">
+        <a href="#home"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+    <!-- Scroll to top end-->
+
+    <!-- Javascript files -->
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.parallax-1.1.3.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+    <script src="assets/js/custom.js"></script>
+
 </body>
 </html>
