@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta name="keywords" content="Akhilesh Goud, Computer Science, Web Developer, Graphic Design, etc.">
+    <meta name="description" content="I am Akhilesh Goud, a computer science graduate student actively looking for opportunities in web, software and application development. I am a graphic designer too.">
+    <meta name="author" content="Akhilesh Goud">
 
     <title>Akhilesh Goud</title>
 
@@ -22,6 +23,18 @@
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
+    <script src="assets/js/1.7.2.jquery.min.js"></script>
+	<script>
+	
+		$(document).ready(function(){
+
+			if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+				$('#prjct-list').css('display', 'none');
+				$('#prjct-list-xs').css('display', 'block');
+				}				
+		});
+	
+	</script>	
 </head>
 <body>
 
@@ -328,8 +341,8 @@
                         <h2 class="pfblock-title">My works</h2>
                         <div class="pfblock-line"></div>
                         <div class="pfblock-subtitle">
-                            <p>I have worked on various projects in different fields of computer science but mostly concentrated on Web and Application Development.</p>
-                            <p>You can find them <a class="link-clr" href="https://github.com/akhileshgoud?tab=repositories" target="_blank">HERE!</a></p>
+                            <p>I have worked on various projects in different subjects of computer science but mostly concentrated on Web and Application Development.</p>
+                            <p>You can find them all <a class="link-clr" href="https://github.com/akhileshgoud?tab=repositories" target="_blank">HERE!</a></p>
                         </div>
                     </div>
 
@@ -338,8 +351,15 @@
             </div>
             <!-- .row -->
 
+			<div id="prjct-list-xs" class="pfblock-subtitle wow fadeInUp">
+					<a class="link-clr" href="http://www.ruralmetro.com/" target="_blank">Rural/Metro Internet</a></br>
+					<a class="link-clr" href="https://github.com/akhileshgoud/Travel-Package-Booking-System" target="_blank">Travel Package Booking System</a></br>
+					<a class="link-clr" href="https://github.com/akhileshgoud/Query-Request-Portal" target="_blank">Query Request Portal</a></br>
+					<a class="link-clr" href="https://github.com/akhileshgoud/Parallelized-Matrix-Multiplication" target="_blank">Parallel Processing Simulation</a></br>
+					and <a class="link-clr" href="https://github.com/akhileshgoud?tab=repositories" target="_blank">many more..</a>
+			</div>
 
-            <div class="row">
+            <div id="prjct-list" class="row">
 
                 <div class="col-xs-12 col-sm-6 col-lg-4">
 
@@ -447,49 +467,51 @@
                         <h2 class="pfblock-title">Graphic Design</h2>
                         <div class="pfblock-line"></div>
                         <div class="pfblock-subtitle">
-                            Graphic Design has always held a fascination for me. I enjoy creating mockups, design, publicity material and make things look simple yet supreme using Adobe Photoshop & Illustrator. 
-					
+                            Graphic Design has always held a fascination for me. I enjoy creating mockups, design, publicity material and make things look simple yet supreme using Adobe Photoshop & Illustrator.
                         </div>
+						<div id="dsgn-list-xs">
+							<div class="pfblock-line"></div>
+							<a href="portfolio.html" class="btn btn-primary">View Portfolio</a></br></br>
+							<div class="pfblock-subtitle">to see some of my graphic design work in marketing.</div>
+						</div>
                     </div>
-
                 </div>
-
+				
             </div>
             <!-- .row -->
 
-
-            <div class="row">
+            <div id="dsgn-list" class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="grid wow zoomIn">
-                        <img src="assets/images/sce1.png" alt="img01" />
+                        <img src="assets/images/sce1.png" alt="img" />
                     </div>
 
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="grid wow zoomIn">
-                        <img src="assets/images/magistech1.png" alt="img01" />
+                        <img src="assets/images/magistech1.png" alt="img" />
                     </div>
 
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="grid wow zoomIn">
-                        <img src="assets/images/magistech2.png" alt="img01" />
+                        <img src="assets/images/magistech2.png" alt="img" />
                     </div>
 
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="grid wow zoomIn">
-                        <img src="assets/images/qubit.jpg" alt="img01" />
+                        <img src="assets/images/qubit1.jpg" alt="img" />
                     </div>
 
                 </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="grid wow zoomIn">
-                        <img src="assets/images/sce2.png" alt="img01" />
+                        <img src="assets/images/sce2.png" alt="img" />
                     </div>
 
                 </div>
@@ -504,6 +526,30 @@
 
     <!-- Interest end -->
 
+	<!-- CallToAction start -->
+
+	<section class="calltoaction">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+						I'm available for freelance projects too.
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="#contact" class="btn btn-lg">Hire Me</a>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- CallToAction end -->
+	
 	<!-- Testimonials start -->
 
 	<section id="testimonials" class="pfblock pfblock-gray">
@@ -524,7 +570,7 @@
 			</div><!-- .row -->
 			
 			<div id="carousel">
-				<div class="row">
+				<div class="row wow fadeInUp">
 					<div class="col-sm-3" id="btn-nrml">
 						<div id="buttons"><a id="prev" href="#"><</a></div>
 						<!--div class="btn-bar"><div id="buttons"><a id="prev" href="#"><span><i class="fa fa-chevron-circle-left"></i></span></a></div></div-->
@@ -586,26 +632,42 @@
         <div class="container">
             <div class="row">
 
-                    <div class="pfblock-header wow fadeInUp">
-                        <h2 class="pfblock-title">Would like to hear from you!</h2>
-                        <div class="pfblock-line"></div>
-                <div class="col-sm-6 col-sm-offset-3">
-                        <div class="pfblock-subtitle">
+                <div class="pfblock-header">
+                    <h2 class="pfblock-title wow fadeInUp">Would like to hear from you!</h2>
+                    <div class="pfblock-line wow fadeInUp"></div>
+					<div class="col-sm-6 col-sm-offset-3">
+						<!--form id="contact-form" role="form">
+							<div id="con-frm" class="ajax-hidden">
+								<div class="form-group wow fadeInUp">
+									<label class="sr-only" for="c_name">Name</label>
+									<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+								</div>
+
+								<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+									<label class="sr-only" for="c_email">Email</label>
+									<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+								</div>
+
+								<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+									<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+								</div>
+
+								<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+							</div>
+							<div class="ajax-response"></div>
+						</form-->
+						<div class="pfblock-subtitle wow fadeInUp">
                             <p>Phone: +1 (480)246-2110</p>
                             <p>Email: akhigoud@outlook.com</p>
                         </div>
-                        <div class="pfblock-line"></div>
+                        <div class="pfblock-line wow fadeInUp"></div>
                         <div>
-                            <h3 class="pfblock-title">You can find me here too!</h3>
-                            </br>
-                            <a href="https://www.linkedin.com/in/akhileshgoud/en" target="_blank">
-                                <img src="assets/images/linkedIn.png" alt="LinkedIn"></a>
-                            &nbsp&nbsp&nbsp&nbsp
-                            <a href="https://github.com/akhileshgoud" target="_blank">
-                                <img src="assets/images/git.png" alt="GitHub"></a>
-                            &nbsp&nbsp&nbsp&nbsp
-                            <a href="https://www.facebook.com/akhilchester" target="_blank">
-                                <img src="assets/images/fb.png" alt="FaceBook"></a>
+                            <h3 class="pfblock-title wow fadeInUp">You can find me here too!</h3>
+							<ul class="social-links">
+								<li><a href="https://www.linkedin.com/in/akhileshgoud/en" target="_blank" class="wow fadeInUp"><img src="assets/images/linkedIn.png" alt="LinkedIn"></a></li>
+								<li><a href="https://github.com/akhileshgoud" target="_blank" class="wow fadeInUp" data-wow-delay=".1s"><img src="assets/images/git.png" alt="GitHub"></a></li>
+								<li><a href="https://www.facebook.com/akhilchester" target="_blank" class="wow fadeInUp" data-wow-delay=".2s"><img src="assets/images/fb.png" alt="FaceBook"></a></li>
+							</ul>
                         </div>
                     </div>
 
@@ -642,13 +704,16 @@
 
     <!-- Footer end -->
 
-    <!-- Scroll to top -->
-
+    <!-- Hire me and Scroll to top -->
+	<div class="hire-me">
+    	<a href="#contact">Hire Me!</a>
+    </div>
+	
     <div class="scroll-up">
         <a href="#home"><i class="fa fa-angle-up"></i></a>
     </div>
 
-    <!-- Scroll to top end-->
+    <!-- Hire me and Scroll to top end-->
 
     <!-- Javascript files -->
 

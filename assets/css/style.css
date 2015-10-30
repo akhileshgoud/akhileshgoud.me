@@ -1,13 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
-/*!
- * My Portfolio v1.0.0
- * Homepage: http://scripteden.com
- * Copyright 2015 Script Eden
- * Licensed under MIT
-*/
-
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
@@ -20,7 +13,7 @@ img {
 }
 
 a {
-	color: #E7746F;
+	color: #FF0000;
 }
 
 a:hover {
@@ -29,7 +22,7 @@ a:hover {
 }
 
 /* ---------------------------------------------- /*
- * Transition elsements
+ * Transition elements
 /* ---------------------------------------------- */
 
 
@@ -295,14 +288,7 @@ textarea.form-control {
     text-align: center;
 }
 .calltoaction {
-    background: url(../images/item-3.jpg);
 	background-color: #222;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
 	padding: 50px 0;
 	color: #999;
 }
@@ -330,12 +316,25 @@ textarea.form-control {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+
 .calltoaction-btn > .btn:hover{
     background: #fff;
 }
 
 .long-down {
 	margin-bottom: 40px;
+}
+
+.link-clr {
+	color: #006699 !important;
+}
+
+.link-clr:hover {
+	color: #FF0000 !important;	
+}
+
+#mobile-btn {
+	display: none;
 }
 
 /* ---------------------------------------------- /*
@@ -394,7 +393,7 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Servise
+ * Service
 /* ---------------------------------------------- */
 
 .iconbox {
@@ -538,7 +537,7 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
 	font-size: 11px;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	color: #222;
 }
 
@@ -548,7 +547,7 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li.active a {
 	background: none;
 	outline: 0;
-	color: #E7746F;
+	color: #FF0000;
 }
 
 .navbar-custom .navbar-brand {
@@ -559,7 +558,7 @@ textarea.form-control {
 
 .navbar-custom .dropdown-menu {
 	border: 0;
-	border-top: 2px solid #E7746F;
+	border-top: 2px solid #FF0000;
 	border-radius: 0;
 }
 
@@ -578,6 +577,35 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
+ * Hire me
+/* ---------------------------------------------- */
+
+.hire-me {
+	position: fixed;
+	display: none;
+	z-index: 999;
+	bottom: 5em;
+	right: 1.5em;
+}
+
+.hire-me a {
+	background-color: rgba(135, 135, 135, 0.5);
+	display: block;
+	width: 80px;
+	height: 35px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.hire-me a:hover,
+.hire-me a:active {
+	background-color: rgba(235, 235, 235, .8);
+	color: #FF0000;
+}
+
+/* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
 
@@ -586,7 +614,7 @@ textarea.form-control {
 	display: none;
 	z-index: 999;
 	bottom: 2em;
-	right: 2em;
+	right: 3em;
 }
 
 .scroll-up a {
@@ -603,7 +631,7 @@ textarea.form-control {
 .scroll-up a:hover,
 .scroll-up a:active {
 	background-color: rgba(235, 235, 235, .8);
-	color: #e7746f;
+	color: #FF0000;
 }
 
 /* ---------------------------------------------- /*
@@ -879,81 +907,115 @@ figure.effect-bubba:hover p {
 /***** Quote Rotator *****/
 /*-----------------------*/
 
-.cbp-qtrotator {
-	position: relative;
-	margin: 3em auto 0em auto;
-	max-width: 90%;
-	width: 90%;
+#carousel {
+  position: relative;
 }
 
-.cbp-qtrotator .cbp-qtcontent {
-	position: absolute;
-	min-height: 200px;
-	border-top: 1px solid #f4f4f4;
-	border-bottom: 1px solid #f4f4f4;
-	padding: 2em 0;
-	top: 0;
-	z-index: 0;
-	opacity: 0;
-	width: 100%;
+#slides {
+  overflow: hidden;
+  position: relative;
 }
 
-.no-js .cbp-qtrotator .cbp-qtcontent {
-	border-bottom: none;
+#slides ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
-.no-js .cbp-qtrotator .cbp-qtcontent {
-	position: relative; 
-	z-index: 100;
-	pointer-events: auto;
-	opacity: 1;
+#slides li {
+  float: left;
+  text-align: center;
+  position: relative;
+  font-family: calibri, sans-serif;
 }
 
-.cbp-qtrotator .cbp-qtcontent:before,
-.cbp-qtrotator .cbp-qtcontent:after {
-	content: " ";
-	display: table;
+/* Styling for prev and next buttons */
+
+.btn-bar {
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
-.cbp-qtrotator .cbp-qtcontent:after {
-	clear: both;
+#buttons {
+  float: center;
+  margin-top: 30%;
 }
 
-.cbp-qtprogress {
-	position: absolute;
-	background: #FF5252;
-	height: 1px;
-	width: 0%;
-	top: 0;
-	z-index: 1000;
+#buttons a {
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
 }
 
-.cbp-qtrotator blockquote {
-	margin: 0;
-	padding: 0;
-    border: 0;
-    font-size: 12px;
+a#prev:hover,
+a#next:hover {
+  color: #FF0000;
 }
 
-.cbp-qtrotator blockquote p {
-	font-size: 2em;
-	color: #888;
-	font-weight: 300;
-	margin: 0.4em 0 1em;
+.quote-phrase,
+.quote-author {
+  position: relative;
+  font-family: sans-serif;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
 }
 
-.cbp-qtrotator blockquote footer {
-	font-size: 1.2em;
+.quote-phrase {
+  font-size: 24px;
+  color: #000;
+  font-family: 'Calibri', Arial, sans-serif;
+  font-style: italic;
 }
 
-.cbp-qtrotator blockquote footer:before {
-	content: '― ';
+.quote-marks {
+  font-size: 30px;
+  padding: 0 3px 3px;
+  position: inherit;
 }
 
-.cbp-qtrotator .cbp-qtcontent img {
+.quote-author {
+  font-style: normal;
+  font-size: 20px;
+  color: #FF0000;
+  font-family: Raleway, "Times New Roman", Times, sans-serif;
+}
+
+.quoteContainer,
+.authorContainer {
+  display: block;
+}
+
+#prjct-list-xs {
+	display: none;
+	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	color: #006699;
+	text-align: center;
+}
+
+#dsgn-list-xs {
+	display: none;
+	text-align: center;
+}
+
+.go-back {
 	float: right;
-	margin-left: 3em;
+	padding-right: 10px;
+	padding-top: 12px;
+	font-style: normal;
+	font-size: 18px;
+	color: #006699;
+}
+
+#portfolio {
+	margin-top: -80px;
 }
 
 /* Example for media query */
@@ -969,3 +1031,43 @@ figure.effect-bubba:hover p {
 
 }
 
+@media screen and (max-width: 994px) {
+	.navbar-custom .navbar-nav > li > a {
+		font-size: 10px;
+		padding-right: 5px;
+	}
+	.navbar-custom .navbar-brand {
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+	.quote-phrase {
+		font-size: 20px;
+	}
+	.quote-author {
+		font-size: 16px;
+	}
+	.quote-marks {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#btn-nrml, #prjct-list, #dsgn-list {
+		display: none;
+	}
+	.quote-phrase {
+		font-size: 14px;
+	}
+	.quote-author {
+		font-size: 12px;
+	}
+	.quote-marks {
+		font-size: 17px;
+	}
+	#mobile-btn, #prjct-list-xs, #dsgn-list-xs {
+		display: block;
+	}
+	.calltoaction-decription{
+		font-size: 16px;
+	}
+}
