@@ -7,7 +7,7 @@ if(isset($_POST['message'])){
 	$message = $_POST['message'];
     
 	
-	$to      = 'info@akhigoud.webatu.com , me@akhigoud.webatu.com';
+	$to      = 'info@akhileshgoud.me , akhigoud@outlook.com';
 	$subject = 'My WebSite Contact Form';
 
 	$headers = 'From: '. $email . "\r\n" .
@@ -23,7 +23,7 @@ if(isset($_POST['message'])){
 		$res['message'] = '<div class=pfblock-subtitle>Thank you for your message :) </br> Will get back to you soon!</div>';
     }
 	else{
-		$res['message'] = '<div class=pfblock-subtitle>Failed to send the E-mail! </br> Please mail me to akhigoud@outlook.com</div>';
+		$res['message'] = '<div class=pfblock-subtitle>Failed to send the E-mail! </br> Please mail me at akhigoud@outlook.com</div>';
 	}
 	
 	
