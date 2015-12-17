@@ -1000,7 +1000,7 @@ a#next:hover {
 	text-align: center;
 }
 
-#dsgn-list-xs {
+#dsgn-list-xs, #desc {
 	display: none;
 	text-align: center;
 }
@@ -1016,6 +1016,10 @@ a#next:hover {
 
 #portfolio {
 	margin-top: -80px;
+}
+
+#vp {
+	text-align: right;
 }
 
 /* Example for media query */
@@ -1052,7 +1056,7 @@ a#next:hover {
 }
 
 @media screen and (max-width: 768px) {
-	#btn-nrml, #prjct-list, #dsgn-list {
+	#btn-nrml, #prjct-list, #dsgn-list, #descr {
 		display: none;
 	}
 	.quote-phrase {
@@ -1064,7 +1068,7 @@ a#next:hover {
 	.quote-marks {
 		font-size: 17px;
 	}
-	#mobile-btn, #prjct-list-xs, #dsgn-list-xs {
+	#mobile-btn, #prjct-list-xs, #dsgn-list-xs, #desc {
 		display: block;
 	}
 	.calltoaction-decription{
