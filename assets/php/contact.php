@@ -20,10 +20,10 @@ if(isset($_POST['message'])){
 		$res['sendstatus'] = 'done';
 	
 		//Edit your message here
-		$res['message'] = '<div class=pfblock-subtitle>Thank you for your message :) </br> Will get back to you soon!</div>';
+		$res['message'] = '<div class=pfblock-subtitle>Thank you for your message. <br> Will get back to you soon!</div>';
     }
 	else{
-		$res['message'] = '<div class=pfblock-subtitle>Failed to send the E-mail! </br> Please mail me at akhigoud@outlook.com</div>';
+		$res['message'] = '<div class=pfblock-subtitle>Failed to send the E-mail! <br> Please mail me at info@akhileshgoud.me</div>';
 	}
 	
 	

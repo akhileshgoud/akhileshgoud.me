@@ -1022,6 +1022,19 @@ a#next:hover {
 	text-align: right;
 }
 
+#carousel-generic-1, #carousel-generic-2 {
+      width: 100%;
+      margin: auto;
+  }
+
+.carousel-indicators li {
+    background-color:darkgray;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
 /* Example for media query */
 @media screen and (max-width: 30.6em) { 
 
@@ -1073,5 +1086,8 @@ a#next:hover {
 	}
 	.calltoaction-decription{
 		font-size: 16px;
+	}
+	#intro-line {
+		margin-left: 5px;
 	}
 }
